@@ -1,0 +1,24 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Asset:
+  fields:
+    default: user_id, image, user
+    form: user_id, image, user
+  order_by: 
+  relationships: user
+  filters: created_at
+  search: 
+  application: sample-typus
+
+User:
+  fields:
+    default: name
+    form: name
+  order_by: 
+  relationships: assets
+  filters: created_at
+  search: name
+  application: sample-typus
+
